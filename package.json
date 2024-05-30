@@ -1,0 +1,25 @@
+{
+  "name": "@apitraffic/fastify",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pub-patch": "npm version patch --force && git push origin master &&  npm publish --access public",
+    "pub-minor": "npm version minor --force && git push origin master &&  npm publish --access public",
+    "pub-major": "npm version major --force && git push origin master &&  npm publish --access public"
+  },
+  "dependencies": {
+    "@apitraffic/utilities": "^0.0.14",
+    "fastify-plugin": "^4.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apitraffic/apitraffic-fastify.git"
+  },
+  "author": "ApiTraffic.io <sdk@apitraffic.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apitraffic/apitraffic-fastify/issues"
+  },
+  "homepage": "https://github.com/apitraffic/apitraffic-fastify#readme"
+}

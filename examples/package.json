@@ -1,0 +1,16 @@
+{
+    "name": "ApiTraffic-Fastify-Example",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "@apitraffic/fastify": "file:..",
+        "axios": "^1.6.8",
+        "fastify": "^4.27.0"
+    },
+    "scripts": {
+        "start": "node basic.js"
+    },
+    "author": "ApiTraffic.io <sdk@apitraffic.io>",
+    "license": "MIT"
+}
