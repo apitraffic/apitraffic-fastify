@@ -1,7 +1,7 @@
 {
   "name": "@apitraffic/fastify",
-  "version": "0.0.2",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Fastify plugin for sending request data to ApiTraffic.",
   "main": "index.js",
   "scripts": {
     "pub-patch": "npm version patch --force && git push origin master &&  npm publish --access public",
@@ -9,7 +9,7 @@
     "pub-major": "npm version major --force && git push origin master &&  npm publish --access public"
   },
   "dependencies": {
-    "@apitraffic/utilities": "^0.0.14",
+    "@apitraffic/utilities": "^1.0.13",
     "fastify-plugin": "^4.5.1"
   },
   "repository": {

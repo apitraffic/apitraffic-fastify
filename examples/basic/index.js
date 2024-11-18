@@ -9,27 +9,36 @@ const apiTraffic = require('@apitraffic/fastify');
 const axios = require('axios');
 
 // Register the ApiTraffic Middleware...
-fastify.register(apiTraffic, {});
+fastify.register(apiTraffic.middleware, {});
 
 /*
   Example passing in options.
-  fastify.register(apiTraffic, {interceptOutbound: false});
+  fastify.register(apiTraffic.middlware, {interceptOutbound: false});
 */
 
 // Declare a route for '/'
 fastify.get('/', async (request, reply) => {
-  return { message: 'Hello, this is the root endpoint!' };
+  return { message: 'Hello, world!' };
 });
 
-// Declare a route for '/outbound'
-fastify.get('/outbound', async (request, reply) => {
+// Declare a route for '/authors'
+fastify.get('/authors', async (request, reply) => {
   
   try{
-      // Await the response of the fetch call
-      const response = await axios.get('https://official-joke-api.appspot.com/random_joke')
+     // add some tracing information to the request. You can add as many traces as required, think of it like console log.
+     apiTraffic.trace("This is a sample trace from the sample ApiTraffic app.");
+
+     // Await the response of the fetch call
+     const response = await axios.get('https://thetestrequest.com/authors');
+     
+      // tag the request. You can add as many tags to a request as required.
+      apiTraffic.tag("Account Id", "12345");
+
+      // added a bit more tracing to show what can be done.
+      apiTraffic.trace(`${response.data.length} authors were found.`);
       
       // once the call is complete, build the response...
-      return { message: 'Hello, this is the outbound endpoint!' };
+      return response.data;
 
   } catch (error) {
       // Handle any errors that occur during the fetch

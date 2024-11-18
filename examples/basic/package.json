@@ -4,12 +4,12 @@
     "description": "",
     "main": "index.js",
     "dependencies": {
-        "@apitraffic/fastify": "file:..",
+        "@apitraffic/fastify": "latest",
         "axios": "^1.6.8",
         "fastify": "^4.27.0"
     },
     "scripts": {
-        "start": "node basic.js"
+        "start": "node index.js"
     },
     "author": "ApiTraffic.io <sdk@apitraffic.io>",
     "license": "MIT"
