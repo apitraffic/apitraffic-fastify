@@ -20,7 +20,7 @@
 </div>
 <hr />
 <br/>
-https://cdn.apitraffic.io/images/RepositoryMasthead.png
+
 ApiTraffic helps engineering teams save development time so they can ship features faster. 
 
 ## Features
