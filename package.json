@@ -3,6 +3,12 @@
   "version": "1.0.5",
   "description": "Fastify plugin for sending request data to ApiTraffic.",
   "main": "index.js",
+  "keywords": [
+    "fastify",
+    "workflows",
+    "integrations",
+    "logging"
+  ],
   "scripts": {
     "pub-patch": "npm version patch --force && git push origin master &&  npm publish --access public",
     "pub-minor": "npm version minor --force && git push origin master &&  npm publish --access public",
