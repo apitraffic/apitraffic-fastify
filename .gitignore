@@ -1,7 +1,5 @@
 node_modules/
 .DS_Store
 npm-debug.log
-package-lock.json
-examples/package-lock.json
-examples/node_modules/
+**/package-lock.json
 .npmrc
