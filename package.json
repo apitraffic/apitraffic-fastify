@@ -1,6 +1,6 @@
 {
   "name": "@apitraffic/fastify",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Fastify plugin for sending request data to ApiTraffic.",
   "main": "index.js",
   "keywords": [
